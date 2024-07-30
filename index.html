@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>ContactPage</title>
+  </head>
+  <body>
+    <form>
+      <div class="success_message z-10">
+        <div class="header_message">
+          <i class="bx bx-check-circle text-xl"></i>
+          <h4 class="text-xl font-semibold">Message Sent!</h4>
+        </div>
+        <span class="text-inputColor text-smallFont"
+          >Thanks for completing the form. We'll be in touch soon!</span
+        >
+      </div>
+      <div class="contact_section p-1">
+        <h1 class="mb-14 text-bigFont">Contact Us</h1>
+        <div class="name flex justify-between items-center gap-5">
+          <div class="input_name w-1/2 relative">
+            <label>First Name <span>*</span></label>
+            <input type="text" id="firstname" />
+            <div class="error_message">
+              <span class="error_text" id="firstNameError"
+                >This field is required</span
+              >
+            </div>
+          </div>
+          <div class="input_name w-1/2 relative">
+            <label>Last Name <span>*</span></label>
+            <input type="text" id="lasttname" />
+            <div class="error_message">
+              <span class="error_text" id="lastNameError"
+                >This field is required</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="email mt-12 relative flex items-center flex-col w-full">
+          <label class="left-0 bottom-14 absolute"
+            >Email Address <span>*</span></label
+          >
+          <input type="email" id="email" />
+          <div class="error_message">
+            <span class="error_text left-0 absolute" id="emailError"
+              >Please enter a vaild email addrss</span
+            >
+          </div>
+        </div>
+        <div class="query_type flex flex-col relative">
+          <label>Query Type <span>*</span></label>
+          <div class="radios flex justify-between mt-3 relative">
+            <div class="radio">
+              <input type="radio" name="query_name" id="general_enquiry" />
+              <label for="general_enquiry">General Enquiry</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="query_name" id="support_request" />
+              <label for="support_request">Support Request</label>
+            </div>
+            <div class="error_message absolute left-0 top-14">
+              <span class="error_text" id="queryError"
+                >Please select a query type</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <label class="mb-1">Message <span>*</span></label>
+          <div class="text_area mt-4 relative">
+            <textarea
+              class="hover:border-buttonColor duration-500 focus:border-buttonColor"
+            ></textarea>
+            <div class="error_message">
+              <span class="error_text" id="messageError"
+                >This field is required</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="check flex items-center relative">
+          <input type="checkbox" id="consent" />
+          <label for="consent"
+            >I Consent to being contacted by the team <span>*</span></label
+          >
+          <div class="error_message absolute left-0 top-8">
+            <span class="error_text" id="checkError"
+              >To submit this form, Please consent to being contacted</span
+            >
+          </div>
+        </div>
+        <div class="btn">
+          <button
+            class="w-full p-3 bg-buttonColor text-formColor border-none text-primaryFont cursor-pointer rounded-sm"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/main/script.js"></script>
+  </body>
+</html>
